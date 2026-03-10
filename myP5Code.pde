@@ -8,8 +8,14 @@ setup = function() {
   fill(239, 227, 185);
   ellipse(335, 66, 70, 70);
 
-  // Draw the tree and grass once
-  text("🌼", 0, 340);
-  text("🎈", 0, 200);
-};
+var flowerX = 0
+var balloonX = 0
 
+  //drawing the emojis
+  while (flowerX < 400) {
+  text("🌼", flowerX, 340);
+  text("🎈", balloonX, 200);
+  flowerX += 60;
+  balloonX += 90;
+};
+};
